@@ -18,7 +18,7 @@ payoff_matrix = np.array([
 ])
 
 num_actions = 3
-num_iterations = 5
+num_iterations = 500
 
 # Initialize play history
 p1_history = []
