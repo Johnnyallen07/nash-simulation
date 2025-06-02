@@ -32,23 +32,16 @@ def has_pure_nash_equilibrium(A, B):
 
 
 # unique
-# A = np.array([[3, 0],
-#               [4, 1]], dtype=float)
-# B = np.array([[3, 4],
-#               [0, 1]], dtype=float)
+A = np.array([[3, 0], [4, 1]], dtype=float)
+B = np.array([[3, 4], [0, 1]], dtype=float)
 
 # does not exist
-# A = np.array([[1, -1],
-#               [-1, 1]], dtype=float)
-# B = np.array([[-1, 1],
-#               [1, -1]], dtype=float)
+A = np.array([[1, -1], [-1, 1]], dtype=float)
+B = np.array([[-1, 1], [1, -1]], dtype=float)
 
-# multiple
-A = np.array([[1, 0],
-              [0, 2]], dtype=float)
-B = np.array([[1, 0],
-              [0, 2]], dtype=float)
+# # multiple
+A = np.array([[1, 0], [0, 2]], dtype=float)
+B = np.array([[2, 0], [0, 1]], dtype=float)
 
 pure_exists, pure_eqs = has_pure_nash_equilibrium(A, B)
-print("Pure NE exists:", pure_exists)
-print("Pure NE choices (i, j):", pure_eqs)
+print(f"Pure NE exists: {pure_exists}; Pure NE choices (i, j): {pure_eqs}")

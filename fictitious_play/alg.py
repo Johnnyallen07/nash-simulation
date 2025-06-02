@@ -111,4 +111,9 @@ payoff_matrix = np.array([
     [1, 0, -1],
     [-1, 1, 0]
 ])
-plot_fictitious_play(payoff_matrix, num_iterations=1000, noise=0, repeats=1)
+p1_freqs, p2_freqs = fictitious_play(
+            payoff_matrix, num_iterations=1000)
+
+print("The probability distribution of player 1 after 1000 iterations: ", p1_freqs[-1])
+print("The probability distribution of player 2 after 1000 iterations: ", p2_freqs[-1])
+# plot_fictitious_play(payoff_matrix, num_iterations=1000, noise=0, repeats=1)
